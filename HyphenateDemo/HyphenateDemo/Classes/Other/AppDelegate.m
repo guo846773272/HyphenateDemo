@@ -13,7 +13,7 @@
 #import "GMYRootViewControllerUtil.h"
 
 #define EM_APPKEY @"guo846773272#gmychat"
-#define APNS_CERT_NAME @"mingkeapp_push_development"
+#define APNS_DEV_CERT_NAME @"mingkeapp_push_development"
 
 @interface AppDelegate ()
 
@@ -31,13 +31,13 @@
     //AppKey:注册的AppKey，详细见下面注释。
     //apnsCertName:推送证书名（不需要加后缀），详细见下面注释。
     EMOptions *options = [EMOptions optionsWithAppkey:EM_APPKEY];
-    options.apnsCertName = APNS_CERT_NAME;
+    options.apnsCertName = APNS_DEV_CERT_NAME;
     [[EMClient sharedClient] initializeSDKWithOptions:options];
     
     [[EaseSDKHelper shareHelper] hyphenateApplication:application
                         didFinishLaunchingWithOptions:launchOptions
                                                appkey:EM_APPKEY
-                                         apnsCertName:APNS_CERT_NAME
+                                         apnsCertName:APNS_DEV_CERT_NAME
                                           otherConfig:@{kSDKConfigEnableConsoleLogger:[NSNumber numberWithBool:YES]}];
     
     return YES;

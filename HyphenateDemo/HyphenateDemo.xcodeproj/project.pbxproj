@@ -39,6 +39,11 @@
 		E7B6BF3C2018B73C0016A414 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B6BF3A2018B73C0016A414 /* LaunchScreen.storyboard */; };
 		E7B6BF492018B73C0016A414 /* HyphenateDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B6BF482018B73C0016A414 /* HyphenateDemoTests.m */; };
 		E7B6BF542018B73C0016A414 /* HyphenateDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B6BF532018B73C0016A414 /* HyphenateDemoUITests.m */; };
+		E7C735AC201C2ED300364E34 /* GMYContactsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C735AB201C2ED300364E34 /* GMYContactsViewModel.m */; };
+		E7C735B3201C581F00364E34 /* GMYRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C735B0201C581F00364E34 /* GMYRefreshAutoNormalFooter.m */; };
+		E7C735B4201C581F00364E34 /* GMYRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C735B2201C581F00364E34 /* GMYRefreshNormalHeader.m */; };
+		E7C735BD201C60C500364E34 /* GMYChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7C735BB201C60C500364E34 /* GMYChatViewController.m */; };
+		E7C735BE201C60C500364E34 /* GMYChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7C735BC201C60C500364E34 /* GMYChatViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +122,16 @@
 		E7B6BF4F2018B73C0016A414 /* HyphenateDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HyphenateDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B6BF532018B73C0016A414 /* HyphenateDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HyphenateDemoUITests.m; sourceTree = "<group>"; };
 		E7B6BF552018B73C0016A414 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7C735AA201C2ED300364E34 /* GMYContactsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMYContactsViewModel.h; sourceTree = "<group>"; };
+		E7C735AB201C2ED300364E34 /* GMYContactsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMYContactsViewModel.m; sourceTree = "<group>"; };
+		E7C735AE201C581F00364E34 /* GMYRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMYRefresh.h; sourceTree = "<group>"; };
+		E7C735AF201C581F00364E34 /* GMYRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMYRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
+		E7C735B0201C581F00364E34 /* GMYRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMYRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
+		E7C735B1201C581F00364E34 /* GMYRefreshNormalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMYRefreshNormalHeader.h; sourceTree = "<group>"; };
+		E7C735B2201C581F00364E34 /* GMYRefreshNormalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMYRefreshNormalHeader.m; sourceTree = "<group>"; };
+		E7C735BA201C60C500364E34 /* GMYChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMYChatViewController.h; sourceTree = "<group>"; };
+		E7C735BB201C60C500364E34 /* GMYChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMYChatViewController.m; sourceTree = "<group>"; };
+		E7C735BC201C60C500364E34 /* GMYChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GMYChatViewController.xib; sourceTree = "<group>"; };
 		EA1B308F4EBB094E5D806C7F /* libPods-HyphenateDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HyphenateDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -217,6 +232,7 @@
 		E75D313D201A1622008B89EA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E7C735AD201C581F00364E34 /* Refresh */,
 				E75D3159201A2B7D008B89EA /* Network */,
 				E75D3149201A1B95008B89EA /* GMYRootViewControllerUtil.h */,
 				E75D314A201A1B95008B89EA /* GMYRootViewControllerUtil.m */,
@@ -291,6 +307,7 @@
 		E7972E14201B051400635D99 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				E7C735B5201C60AB00364E34 /* Chat */,
 				E7972E45201B078D00635D99 /* Contacts */,
 				E7972E31201B062B00635D99 /* Conversation */,
 				E7972E2C201B062A00635D99 /* Setting */,
@@ -420,6 +437,8 @@
 		E7972E49201B078D00635D99 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E7C735AA201C2ED300364E34 /* GMYContactsViewModel.h */,
+				E7C735AB201C2ED300364E34 /* GMYContactsViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -483,6 +502,60 @@
 				E7B6BF552018B73C0016A414 /* Info.plist */,
 			);
 			path = HyphenateDemoUITests;
+			sourceTree = "<group>";
+		};
+		E7C735AD201C581F00364E34 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				E7C735AE201C581F00364E34 /* GMYRefresh.h */,
+				E7C735AF201C581F00364E34 /* GMYRefreshAutoNormalFooter.h */,
+				E7C735B0201C581F00364E34 /* GMYRefreshAutoNormalFooter.m */,
+				E7C735B1201C581F00364E34 /* GMYRefreshNormalHeader.h */,
+				E7C735B2201C581F00364E34 /* GMYRefreshNormalHeader.m */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
+		E7C735B5201C60AB00364E34 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				E7C735B6201C60AB00364E34 /* Controller */,
+				E7C735B7201C60AB00364E34 /* Model */,
+				E7C735B8201C60AB00364E34 /* View */,
+				E7C735B9201C60AB00364E34 /* ViewModel */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		E7C735B6201C60AB00364E34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E7C735BA201C60C500364E34 /* GMYChatViewController.h */,
+				E7C735BB201C60C500364E34 /* GMYChatViewController.m */,
+				E7C735BC201C60C500364E34 /* GMYChatViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E7C735B7201C60AB00364E34 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E7C735B8201C60AB00364E34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E7C735B9201C60AB00364E34 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -602,6 +675,7 @@
 			files = (
 				E75D3150201A1DFE008B89EA /* GMYBaseViewController.xib in Resources */,
 				E7972E10201AFD2C00635D99 /* GMYSignInViewController.xib in Resources */,
+				E7C735BE201C60C500364E34 /* GMYChatViewController.xib in Resources */,
 				E7B6BF3C2018B73C0016A414 /* LaunchScreen.storyboard in Resources */,
 				E7972E44201B06DA00635D99 /* GMYSettingViewController.xib in Resources */,
 				E7B6BF392018B73B0016A414 /* Assets.xcassets in Resources */,
@@ -754,7 +828,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-HyphenateDemo/Pods-HyphenateDemo-resources.sh",
 				"${PODS_ROOT}/EaseUI/EaseUI/resources/EaseUIResource.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				$PODS_CONFIGURATION_BUILD_DIR/MWPhotoBrowser/MWPhotoBrowser.bundle,
+				"${PODS_CONFIGURATION_BUILD_DIR}/MWPhotoBrowser/MWPhotoBrowser.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -772,7 +846,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HyphenateDemo/Pods-HyphenateDemo-frameworks.sh",
-				"${PODS_ROOT}/Hyphenate/ios_IM_Hyphenate_sdk_3.3.7/HyphenateFullSDK/Hyphenate.framework",
+				"${PODS_ROOT}/Hyphenate/iOS_IM_SDK_V3.3.8/HyphenateFullSDK/Hyphenate.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -791,6 +865,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7972E0F201AFD2C00635D99 /* GMYSignInViewController.m in Sources */,
+				E7C735B4201C581F00364E34 /* GMYRefreshNormalHeader.m in Sources */,
 				E7972E52201B07D200635D99 /* GMYContactsViewController.m in Sources */,
 				E7972E39201B066A00635D99 /* GMYNavigationController.m in Sources */,
 				E75D314B201A1B95008B89EA /* GMYRootViewControllerUtil.m in Sources */,
@@ -798,13 +873,16 @@
 				E7972E5D201B0CF900635D99 /* GMYUserViewModel.m in Sources */,
 				E75D3134201A157C008B89EA /* main.m in Sources */,
 				E75D313B201A15F2008B89EA /* GMYTabBarController.m in Sources */,
+				E7C735AC201C2ED300364E34 /* GMYContactsViewModel.m in Sources */,
 				E7972E13201AFD5500635D99 /* GMYSignInViewModel.m in Sources */,
 				E7972E57201B08B000635D99 /* UIView+GMYExtension.m in Sources */,
 				E75D314F201A1DFE008B89EA /* GMYBaseViewController.m in Sources */,
 				E7972E5A201B0C9C00635D99 /* GMYUserModel.m in Sources */,
 				E75D3133201A157C008B89EA /* ViewController.m in Sources */,
+				E7C735B3201C581F00364E34 /* GMYRefreshAutoNormalFooter.m in Sources */,
 				E75D315C201A2BAD008B89EA /* GMYHTTPSessionManager.m in Sources */,
 				E7972E3E201B06C700635D99 /* GMYConversationListViewController.m in Sources */,
+				E7C735BD201C60C500364E34 /* GMYChatViewController.m in Sources */,
 				E75D3135201A157C008B89EA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -973,6 +1051,7 @@
 				DEVELOPMENT_TEAM = ED695YNX3K;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HyphenateDemo/Classes/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = HyphenateDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mingkeapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -989,6 +1068,7 @@
 				DEVELOPMENT_TEAM = ED695YNX3K;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HyphenateDemo/Classes/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = HyphenateDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mingkeapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

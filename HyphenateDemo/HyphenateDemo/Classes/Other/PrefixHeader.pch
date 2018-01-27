@@ -15,7 +15,7 @@
 #ifdef DEBUG
 //degug
 #define GMYLog(...) NSLog(__VA_ARGS__)
-#define GMYLogFunc GMYLog(@"%s", __func__)
+#define GMYLogFunc GMYLog(@"%s", __func__);
 
 
 #else
