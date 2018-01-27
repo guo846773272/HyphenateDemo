@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dAR-1Q-vOG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNC-yf-VSh">
+                                <rect key="frame" x="10" y="74" width="355" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XX6-CP-eGP"/>
+                                </constraints>
+                                <state key="normal" title="登录环信"/>
+                                <connections>
+                                    <action selector="signInEM:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KXi-KS-vWT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Md5-eJ-xhY">
+                                <rect key="frame" x="10" y="114" width="355" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sxX-CO-YeZ"/>
+                                </constraints>
+                                <state key="normal" title="初始化单聊页面"/>
+                                <connections>
+                                    <action selector="initialSignalChatPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Gx-Ns-f1J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="err-xp-HMA">
+                                <rect key="frame" x="10" y="154" width="355" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KCG-NZ-zKh"/>
+                                </constraints>
+                                <state key="normal" title="创建群组"/>
+                                <connections>
+                                    <action selector="createGroup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bQZ-mT-XVW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxI-WP-fdT">
+                                <rect key="frame" x="10" y="194" width="355" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1wI-O6-7zX"/>
+                                </constraints>
+                                <state key="normal" title="初始化群聊页面"/>
+                                <connections>
+                                    <action selector="initialGroupChatPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pqr-mj-Do7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCh-xk-LEN">
+                                <rect key="frame" x="10" y="234" width="355" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FSV-1I-Ykt"/>
+                                </constraints>
+                                <state key="normal" title="添加好友"/>
+                                <connections>
+                                    <action selector="addContact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="amq-Gh-EhJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5d-4n-1Gw">
+                                <rect key="frame" x="10" y="274" width="355" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eby-h1-1nd"/>
+                                </constraints>
+                                <state key="normal" title="同意好友申请"/>
+                                <connections>
+                                    <action selector="agreeApply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5MB-GI-XfW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HY1-tN-nUA">
+                                <rect key="frame" x="10" y="314" width="355" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="P5M-zK-b9A"/>
+                                </constraints>
+                                <state key="normal" title="拒绝好友申请"/>
+                                <connections>
+                                    <action selector="refuseApply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cgn-uL-gZ8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="215-1u-kt5">
+                                <rect key="frame" x="10" y="354" width="355" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2iA-tx-tHc"/>
+                                </constraints>
+                                <state key="normal" title="删除好友"/>
+                                <connections>
+                                    <action selector="deleteContact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hGr-by-3H6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dtu-RC-3wZ">
+                                <rect key="frame" x="10" y="394" width="355" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sKC-jn-Kzg"/>
+                                </constraints>
+                                <state key="normal" title="获取好友"/>
+                                <connections>
+                                    <action selector="getContact:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hBP-di-gSR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HY1-tN-nUA" secondAttribute="trailing" constant="10" id="0Md-IY-3t5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pxI-WP-fdT" secondAttribute="trailing" constant="10" id="2aL-cg-iug"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="215-1u-kt5" secondAttribute="trailing" constant="10" id="40y-SM-XVJ"/>
+                            <constraint firstItem="K5d-4n-1Gw" firstAttribute="top" secondItem="MCh-xk-LEN" secondAttribute="bottom" constant="10" id="8Pb-cq-Hhd"/>
+                            <constraint firstItem="pxI-WP-fdT" firstAttribute="top" secondItem="err-xp-HMA" secondAttribute="bottom" constant="10" id="9aK-Mi-lhh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FNC-yf-VSh" secondAttribute="trailing" constant="10" id="9h2-Ua-elX"/>
+                            <constraint firstItem="MCh-xk-LEN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="AJh-fs-sii"/>
+                            <constraint firstItem="Md5-eJ-xhY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="CC7-zW-PoF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Dtu-RC-3wZ" secondAttribute="trailing" constant="10" id="I4l-0Z-24Q"/>
+                            <constraint firstItem="Dtu-RC-3wZ" firstAttribute="top" secondItem="215-1u-kt5" secondAttribute="bottom" constant="10" id="ICK-Gq-iKB"/>
+                            <constraint firstItem="FNC-yf-VSh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="IWV-OZ-Mn9"/>
+                            <constraint firstItem="Dtu-RC-3wZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="NG6-ey-cnH"/>
+                            <constraint firstItem="err-xp-HMA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="NMT-fG-6oP"/>
+                            <constraint firstItem="FNC-yf-VSh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="QeE-rW-HdL"/>
+                            <constraint firstItem="K5d-4n-1Gw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="S0E-Gi-2gQ"/>
+                            <constraint firstItem="HY1-tN-nUA" firstAttribute="top" secondItem="K5d-4n-1Gw" secondAttribute="bottom" constant="10" id="Sim-4t-UsX"/>
+                            <constraint firstItem="215-1u-kt5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Xj0-m2-s8d"/>
+                            <constraint firstItem="Md5-eJ-xhY" firstAttribute="top" secondItem="FNC-yf-VSh" secondAttribute="bottom" constant="10" id="cXw-jB-toe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K5d-4n-1Gw" secondAttribute="trailing" constant="10" id="e8H-EH-KQQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Md5-eJ-xhY" secondAttribute="trailing" constant="10" id="m0y-m8-KEo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="err-xp-HMA" secondAttribute="trailing" constant="10" id="m63-cB-mEL"/>
+                            <constraint firstItem="err-xp-HMA" firstAttribute="top" secondItem="Md5-eJ-xhY" secondAttribute="bottom" constant="10" id="pyZ-eB-zUB"/>
+                            <constraint firstItem="215-1u-kt5" firstAttribute="top" secondItem="HY1-tN-nUA" secondAttribute="bottom" constant="10" id="rAt-fm-5hd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MCh-xk-LEN" secondAttribute="trailing" constant="10" id="s2V-UY-IUB"/>
+                            <constraint firstItem="HY1-tN-nUA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="wqW-QW-Lzb"/>
+                            <constraint firstItem="pxI-WP-fdT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="xJ9-iF-tmg"/>
+                            <constraint firstItem="MCh-xk-LEN" firstAttribute="top" secondItem="pxI-WP-fdT" secondAttribute="bottom" constant="10" id="z5T-8f-vl5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Oc-En-Dcb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="393" y="-443"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="l8t-GA-iRV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dAR-1Q-vOG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Atg-dx-Ixm">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5cL-zc-ype"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0bY-tI-Jdd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-342" y="-258"/>
+        </scene>
+    </scenes>
+</document>

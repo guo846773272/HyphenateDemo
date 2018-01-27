@@ -1,0 +1,46 @@
+//
+//  PrefixHeader.pch
+//  HyphenateDemo
+//
+//  Created by GMY on 2018/1/25.
+//  Copyright © 2018年 gmy. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef DEBUG
+//degug
+#define GMYLog(...) NSLog(__VA_ARGS__)
+#define GMYLogFunc GMYLog(@"%s", __func__)
+
+
+#else
+//release
+#define GMYLog(...)
+#define GMYLogFunc
+
+
+#endif
+
+#import "ReactiveObjC.h"
+#import <Hyphenate/Hyphenate.h>
+#import "EaseUI.h"
+
+#import "GMYHTTPSessionManager.h"
+#import "UIView+GMYExtension.h"
+#import "GMYUserViewModel.h"
+
+#define GMYColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/1.0]
+#define GMYColorFromHex(hex, a) [UIColor colorWithRed:(((hex & 0xFF0000) >> 16))/255.0 green:(((hex & 0xFF00) >> 8))/255.0 blue:((hex & 0xFF))/255.0 alpha: (a)/1.0]
+#define GMYGlobalBg GMYColor(235, 235, 236, 1)
+#define GMYGlobalPrimaryColor GMYColor(255, 114, 0, 1)
+#define GMYScreenBounds [UIScreen mainScreen].bounds
+#define GMYScreenW [UIScreen mainScreen].bounds.size.width
+#define GMYScreenH [UIScreen mainScreen].bounds.size.height
+#define GMYKeyWindow [[UIApplication sharedApplication] delegate].window
+
+#endif /* PrefixHeader_pch */
